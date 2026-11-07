@@ -1,0 +1,26 @@
+name: flutterdemo
+description: "MSU Smart Task Manager Lab 2"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.0                      # Local persistence (SQLite)
+  path: ^1.9.0                         # Database file path resolution
+  firebase_core: ^3.6.0                # Firebase app initialization
+  cloud_firestore: ^5.4.4              # Cloud database and real-time synchronization
+  flutter_local_notifications: ^17.2.3 # Task reminders and push notifications
+  timezone: ^0.9.4                     # Timezone data for scheduled reminders
+  connectivity_plus: ^6.0.5            # Network detection for offline sync
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
